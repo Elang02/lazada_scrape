@@ -1,6 +1,6 @@
 Lazada Shop Scraper (Thailand)
 
-Fetch product listings from selected Lazada Thailand stores and save them to plain-text files—one file per store.
+Fetch product listings from selected Lazada Thailand stores and save them to plain-text files, one file per store.
 Each output line is formatted as:
 
 <product_name>|<image_url>|<sold_count>
@@ -12,8 +12,6 @@ Features
 
 Scrapes multiple stores in one run (store_list).
 
-Uses Lazada’s CSRF token endpoint to build valid requests.
-
 Writes clean txt outputs per store.
 
 Simple, dependency-light (only requests).
@@ -22,10 +20,10 @@ Requirements
 
 Python 3.8+
 
-Dependencies: requests
-
+Library: requests
+```shell
 pip install requests
-
+```
 Quick Start
 
 Save the script (e.g., scrape_lazada.py).
@@ -37,8 +35,9 @@ store_list = ['sandisk', 'kenvue', 'welcare-thailand']
 
 Run it:
 
+```shell
 python scrape_lazada.py
-
+```
 
 Outputs will be created in the working directory:
 
